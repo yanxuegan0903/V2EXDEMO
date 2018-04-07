@@ -27,7 +27,7 @@ class V2EXRequest: NSObject {
         
         let dataTask:URLSessionDataTask = session.dataTask(with: url) { (data, response, error) in
             
-            let dict:Dictionary = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers)
+            let dict = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers)
             
             print("dict = ",dict as Any)
             
