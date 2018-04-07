@@ -17,9 +17,6 @@ class V2EXRequest: NSObject {
     }
     
     public func requestTopics() -> Void {
-        print("requestTopics")
-        
-        
         
         let url: URL = URL.init(string: "https://www.v2ex.com/api/topics/hot.json")!
         
@@ -30,6 +27,7 @@ class V2EXRequest: NSObject {
             let dict = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers)
             
             print("dict = ",dict as Any)
+            
             
         }
         
