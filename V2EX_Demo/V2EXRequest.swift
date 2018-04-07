@@ -57,12 +57,6 @@ class V2EXRequest: NSObject {
     }
     
     
-    func ajaxTools(complated:(_ runStr: String) -> Void) {
-        let resStr = "覆水难收"
-        complated(resStr)
-    }
-    
-    
     
 }
 
