@@ -13,6 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let v2ex = V2EXRequest.init()
+        v2ex.requestTopics();
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
