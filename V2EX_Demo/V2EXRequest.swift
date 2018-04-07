@@ -12,12 +12,22 @@ import UIKit
 
 class V2EXRequest: NSObject {
     
+    
+    
+    
+    
     override init() {
         print("init")
     }
+
+//    func ajaxTools(name:String ,completed:(runStr: String,isStop:Bool) -> String) -> String {
+//        let resStr = name + "覆水难收"
+//        completed(runStr: resStr, isStop: true)
+//        return resStr + " - 内部函数返回"
+//    }
     
-    public func requestTopics() -> Void {
-        
+    public func requestTopics(completed:@escaping (_ modelArray: NSMutableArray) -> Void) {
+
         let url: URL = URL.init(string: "https://www.v2ex.com/api/topics/hot.json")!
         
         let session: URLSession = URLSession.shared
@@ -28,22 +38,31 @@ class V2EXRequest: NSObject {
             
             array = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
             
+            let modelArray:NSMutableArray = NSMutableArray.init()
+            
             for dict in array {
                 
+                let model:V2EXModel = V2EXModel.init(dict: dict as! Dictionary<String, Any>);
                 
-                var model:V2EXModel = V2EXModel.init(dict: dict as! Dictionary<String, Any>);
+                modelArray.add(model)
                 
-                
-                
-//
             }
-   
+            
+            completed(modelArray)
         }
         
         
         dataTask.resume()
         
     }
+    
+    
+    func ajaxTools(complated:(_ runStr: String) -> Void) {
+        let resStr = "覆水难收"
+        complated(resStr)
+    }
+    
+    
     
 }
 

@@ -39,11 +39,11 @@ class V2EXModel: NSObject {
         self.last_modified = dict["id"] as? Int
         self.last_touched = dict["id"] as? Int
 
-        
-        
-        print("id = ",self.id!)
-        print("member = ",self.member!)
-        print("last_touched = ",self.last_touched!)
+//        
+//        
+//        print("id = ",self.id!)
+//        print("member = ",self.member!)
+//        print("last_touched = ",self.last_touched!)
 
         
     }

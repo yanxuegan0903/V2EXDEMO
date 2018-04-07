@@ -16,10 +16,15 @@ class ViewController: UIViewController {
         
         
         let v2ex = V2EXRequest.init()
-        v2ex.requestTopics();
+       
+        v2ex.ajaxTools { (runstr) in
+            print(runstr)
+        }
         
-        
-        
+        v2ex.requestTopics { (modelArray) in
+            print("model = ",modelArray)
+            print("\n\n\n")
+        }
         
     }
 
