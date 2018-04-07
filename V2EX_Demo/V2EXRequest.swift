@@ -24,11 +24,20 @@ class V2EXRequest: NSObject {
         
         let dataTask:URLSessionDataTask = session.dataTask(with: url) { (data, response, error) in
             
-            let dict = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers)
+            let array:NSArray
             
-            print("dict = ",dict as Any)
+            array = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
             
-            
+            for dict in array {
+                
+                
+                var model:V2EXModel = V2EXModel.init(dict: dict as! Dictionary<String, Any>);
+                
+                
+                
+//
+            }
+   
         }
         
         
