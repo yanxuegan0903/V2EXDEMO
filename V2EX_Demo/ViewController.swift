@@ -24,8 +24,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         //  获取网络数据
 
-//        let v2ex = V2EXRequest.init()
-//        weak var weakSelf = self
         V2EXRequest().requestTopics {(modelArray) in
             
             print("model = ",modelArray)
