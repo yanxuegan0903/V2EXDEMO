@@ -29,18 +29,25 @@ class V2EXRequest: NSObject {
         
         let dataTask:URLSessionDataTask = session.dataTask(with: url) { (data, response, error) in
             
-            let array:NSArray
+//            let array:NSArray
+//
+//            array = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
+//
+//            let modelArr = Mapper<RequestModel>().mapArray(JSONArray: array as! [[String : Any]])
+//
+//            print(modelArr)
+//
+//            completed(modelArr as! NSMutableArray)
+//
+            // 转成对象
+            guard let jsonData = data else { return }
+            guard let array = try? JSONSerialization.jsonObject(with: jsonData, options: .allowFragments) else { return }
             
-            array = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
+            let modelArr = Mapper<RequestModel>().mapArray(JSONObject: array)
+
+            print("\(modelArr)")
             
-            let modelArr = Mapper<RequestModel>().mapArray(JSONArray: array as! [[String : Any]])
-            
-            print(modelArr)
-            
-            completed(modelArr as! NSMutableArray)
         }
-        
-        
         dataTask.resume()
         
     }

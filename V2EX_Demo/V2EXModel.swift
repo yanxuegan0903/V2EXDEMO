@@ -24,6 +24,7 @@ class V2EXModel: NSObject {
     var last_modified: Int?
     var last_touched: Int?
     
+    
     init(dict:Dictionary<String, Any>){
         super.init()
         
@@ -38,8 +39,6 @@ class V2EXModel: NSObject {
         self.created = dict["created"] as? Int
         self.last_modified = dict["id"] as? Int
         self.last_touched = dict["id"] as? Int
-        
-        
     }
 
 }
