@@ -31,16 +31,20 @@ class V2EXRequest: NSObject {
             
             let array:NSArray
             
+            //  Json 解析出数据 为一个数组
             array = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
             
+            //  字典转模型
             let modelArr = Mapper<RequestModel>().mapArray(JSONArray: array as! [[String : Any]])
             
+            /*****************需要修改的地方*********************/
             let modelArray:NSMutableArray = NSMutableArray.init()
             
             for model:RequestModel in modelArr {
                 modelArray.add(model)
             }
-            
+            /*************************************************/
+
             completed(modelArray)
         }
         

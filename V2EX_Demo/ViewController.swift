@@ -68,7 +68,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         cell.configModelData(model: model)
         
         if self.isLoadImage {
-            cell.url2Image(imgUrl: model.member!["avatar_normal"] as! String)
+            cell.url2Image(imgUrl: (model.member?.avatar_normal)!)
         }
 
         return cell
@@ -105,7 +105,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         for indexPath in visibleArray! {
             let model = self.modelArray.object(at: indexPath.row) as! RequestModel
             let cell:DisplayCell = self.tableView?.cellForRow(at: indexPath) as! DisplayCell
-            cell.url2Image(imgUrl: model.member!["avatar_normal"] as! String)
+            cell.url2Image(imgUrl: (model.member?.avatar_normal)!)
         }
         
     }

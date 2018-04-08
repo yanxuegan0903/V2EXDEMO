@@ -116,7 +116,7 @@ class DisplayCell: UITableViewCell {
     //MARK: 初始化数据
     func configModelData(model:RequestModel) {
         
-        self.userName?.text = (model.member?["username"] as! String)
+        self.userName?.text = (model.member?.username)
         
         self.title?.text = model.title
         

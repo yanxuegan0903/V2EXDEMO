@@ -16,8 +16,8 @@ class RequestModel: Mappable {
     var content: String?
     var content_rendered: String?
     var replies: Int?
-    var member: Dictionary<String, Any>?
-    var node: Dictionary<String, Any>?
+    var member: Member?
+    var node: Node?
     var created: Int?
     var last_modified: Int?
     var last_touched: Int?
@@ -43,3 +43,70 @@ class RequestModel: Mappable {
     
     
 }
+
+
+//MARK: 子类 member
+
+class Member: Mappable {
+    
+    var id:Int?
+    var username:String?
+    var tagline:String?
+    var avatar_mini:String?
+    var avatar_normal:String?
+    var avatar_large:String?
+
+    
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        id                  <- map["id"]
+        username            <- map["username"]
+        tagline             <- map["tagline"]
+        avatar_mini         <- map["avatar_mini"]
+        avatar_normal       <- map["avatar_normal"]
+        avatar_large        <- map["avatar_large"]
+        
+    }
+    
+    
+    
+}
+
+//MARK: 子类 member
+
+class Node: Mappable {
+    
+    var id:Int?
+    var name:String?
+    var title:String?
+    var title_alternative:String?
+    var topics:Int?
+    var avatar_mini:String?
+    var avatar_normal:String?
+    var avatar_large:String?
+
+    
+    
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        id                  <- map["id"]
+        name                <- map["name"]
+        title               <- map["title"]
+        title_alternative   <- map["title_alternative"]
+        topics              <- map["topics"]
+        avatar_mini         <- map["avatar_mini"]
+        avatar_normal       <- map["avatar_normal"]
+        avatar_large        <- map["avatar_large"]
+    }
+    
+    
+    
+}
+
+

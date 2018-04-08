@@ -17,7 +17,6 @@
 		A7AF99782078993300E243E6 /* V2EX_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF99772078993300E243E6 /* V2EX_DemoTests.swift */; };
 		A7AF99832078993300E243E6 /* V2EX_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF99822078993300E243E6 /* V2EX_DemoUITests.swift */; };
 		A7AF99912078996700E243E6 /* V2EXRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF99902078996700E243E6 /* V2EXRequest.swift */; };
-		A7AF99932078A7F000E243E6 /* V2EXModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF99922078A7F000E243E6 /* V2EXModel.swift */; };
 		A7AF99992078B7E100E243E6 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF99982078B7E000E243E6 /* libc++abi.tbd */; };
 		A7AF99D52078D2F100E243E6 /* DisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF99D42078D2F100E243E6 /* DisplayCell.swift */; };
 		A7AF99D72079A5EB00E243E6 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF99D62079A5EB00E243E6 /* RequestModel.swift */; };
@@ -90,7 +89,6 @@
 		A7AF99822078993300E243E6 /* V2EX_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EX_DemoUITests.swift; sourceTree = "<group>"; };
 		A7AF99842078993300E243E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7AF99902078996700E243E6 /* V2EXRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EXRequest.swift; sourceTree = "<group>"; };
-		A7AF99922078A7F000E243E6 /* V2EXModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EXModel.swift; sourceTree = "<group>"; };
 		A7AF99972078AC3B00E243E6 /* V2EX_Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "V2EX_Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		A7AF99982078B7E000E243E6 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		A7AF99D42078D2F100E243E6 /* DisplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCell.swift; sourceTree = "<group>"; };
@@ -214,7 +212,6 @@
 				A7AF9A9E2079BBD600E243E6 /* DetailView.swift */,
 				A7AF99972078AC3B00E243E6 /* V2EX_Demo-Bridging-Header.h */,
 				A7AF99902078996700E243E6 /* V2EXRequest.swift */,
-				A7AF99922078A7F000E243E6 /* V2EXModel.swift */,
 				A7AF99D62079A5EB00E243E6 /* RequestModel.swift */,
 				A7AF99662078993300E243E6 /* Main.storyboard */,
 				A7AF99692078993300E243E6 /* Assets.xcassets */,
@@ -558,7 +555,6 @@
 			files = (
 				A7AF99D52078D2F100E243E6 /* DisplayCell.swift in Sources */,
 				A7AF9A8F2079A82700E243E6 /* Mappable.swift in Sources */,
-				A7AF99932078A7F000E243E6 /* V2EXModel.swift in Sources */,
 				A7AF9A8B2079A82700E243E6 /* IntegerOperators.swift in Sources */,
 				A7AF9A902079A82700E243E6 /* Mapper.swift in Sources */,
 				A7AF99652078993300E243E6 /* ViewController.swift in Sources */,
