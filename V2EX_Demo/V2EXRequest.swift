@@ -35,9 +35,13 @@ class V2EXRequest: NSObject {
             
             let modelArr = Mapper<RequestModel>().mapArray(JSONArray: array as! [[String : Any]])
             
-            print(modelArr)
+            let modelArray:NSMutableArray = NSMutableArray.init()
             
-            completed(modelArr as! NSMutableArray)
+            for model:RequestModel in modelArr {
+                modelArray.add(model)
+            }
+            
+            completed(modelArray)
         }
         
         

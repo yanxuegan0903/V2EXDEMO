@@ -31,7 +31,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         weak var weakSelf = self
         v2ex.requestTopics { (modelArray) in
-            print("model = ",modelArray)
             if let strongSelf = weakSelf {
                 strongSelf.modelArray = modelArray ;
                 
@@ -64,7 +63,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         let cell: DisplayCell = tableView.dequeueReusableCell(withIdentifier: "DisplayCell", for: indexPath) as! DisplayCell
         
-        let model = self.modelArray.object(at: indexPath.row) as! V2EXModel
+        let model = self.modelArray.object(at: indexPath.row) as! RequestModel
         
         cell.configModelData(model: model)
         
@@ -83,7 +82,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     //MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        let model = self.modelArray.object(at: indexPath.row) as! V2EXModel
+        let model = self.modelArray.object(at: indexPath.row) as! RequestModel
         let detailVC:DetailViewController = DetailViewController()
         detailVC.model = model
         self.navigationController?.pushViewController(detailVC, animated: true)
@@ -104,7 +103,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         let visibleArray = self.tableView?.indexPathsForVisibleRows
         for indexPath in visibleArray! {
-            let model = self.modelArray.object(at: indexPath.row) as! V2EXModel
+            let model = self.modelArray.object(at: indexPath.row) as! RequestModel
             let cell:DisplayCell = self.tableView?.cellForRow(at: indexPath) as! DisplayCell
             cell.url2Image(imgUrl: model.member!["avatar_normal"] as! String)
         }

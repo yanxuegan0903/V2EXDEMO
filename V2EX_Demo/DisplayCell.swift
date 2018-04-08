@@ -10,7 +10,7 @@ import UIKit
 
 class DisplayCell: UITableViewCell {
 
-//    var model:V2EXModel?
+//    var model:RequestModel?
     var avatar:UIImageView?
     var userName:UILabel?
     var title:UILabel?
@@ -114,8 +114,7 @@ class DisplayCell: UITableViewCell {
     
     
     //MARK: 初始化数据
-    func configModelData(model:V2EXModel) {
-//        self.model = model;
+    func configModelData(model:RequestModel) {
         
         self.userName?.text = (model.member?["username"] as! String)
         

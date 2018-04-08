@@ -10,7 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var model:V2EXModel?
+    var model:RequestModel?
     
     
     
