@@ -10,7 +10,6 @@ import UIKit
 
 class DisplayCell: UITableViewCell {
 
-//    var model:RequestModel?
     var avatar:UIImageView?
     var userName:UILabel?
     var title:UILabel?
@@ -74,9 +73,7 @@ class DisplayCell: UITableViewCell {
         
         let avatarHeight:CGFloat = 40.0
         let margin:CGFloat = 5.0
-        
         self.avatar?.frame = CGRect.init(x: margin, y: margin, width: avatarHeight, height: avatarHeight)
-        
         
         let userNameX:CGFloat = (self.avatar?.frame.maxX)! + margin
         let userNameY:CGFloat = (self.avatar?.frame.minY)!;
@@ -130,6 +127,7 @@ class DisplayCell: UITableViewCell {
     }
     
     
+    //MARK:网络下载头像  
     func url2Image(imgUrl:String) {
         
         let imageUrl = String.init(format: "http:%@", imgUrl)

@@ -17,10 +17,10 @@ class V2EXRequest: NSObject {
     
     
     override init() {
-        
+        super.init()
     }
 
-    
+    //MARK: 网络请求展示的数据
     public func requestTopics(completed:@escaping (_ modelArray: NSMutableArray) -> Void) {
 
         let url: URL = URL.init(string: "https://www.v2ex.com/api/topics/hot.json")!
@@ -31,13 +31,13 @@ class V2EXRequest: NSObject {
             
             let array:NSArray
             
-            //  Json 解析出数据 为一个数组
+            //  Json 解析出数据 为一个JSON 字符串
             array = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
             
             //  字典转模型
             let modelArr = Mapper<RequestModel>().mapArray(JSONArray: array as! [[String : Any]])
             
-            /*****************需要修改的地方*********************/
+            /*****************需要修改的地方 省掉这一步  该怎么省掉*********************/
             let modelArray:NSMutableArray = NSMutableArray.init()
             
             for model:RequestModel in modelArr {

@@ -6,9 +6,6 @@
 //  Copyright © 2018年 vsKing. All rights reserved.
 //
 
-
-
-
 import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
@@ -98,6 +95,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         self.isLoadImage = false
     }
+    
     
     func loadImageIcon() {
         

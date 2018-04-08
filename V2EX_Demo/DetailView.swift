@@ -10,16 +10,13 @@ import UIKit
 
 class DetailView: UIView {
     
+    //MARK: properties
     var title:UILabel?
     var time:UILabel?
     var author:UILabel?
     var content:UITextView?
     
-    
-    
-    
-    
-    
+    //  MARK: 初始化
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -30,9 +27,10 @@ class DetailView: UIView {
         self.initUI()
     }
     
-    
+    //MARK: 初始化UI
     func initUI() {
         
+        //  标题
         let title = UILabel.init()
         self.addSubview(title)
         title.numberOfLines = 0
@@ -40,21 +38,21 @@ class DetailView: UIView {
         title.font = UIFont.systemFont(ofSize: 24)
         self.title = title
         
-        
+        //  发布时间
         let time = UILabel.init()
         self.addSubview(time)
         time.textColor = UIColor.gray
         time.font = UIFont.systemFont(ofSize: 12)
         self.time = time
         
-        
+        //  作者
         let author = UILabel.init()
         self.addSubview(author)
         author.textColor = UIColor.blue
         author.font = UIFont.systemFont(ofSize: 12)
         self.author = author
         
-        
+        //  内容
         let content = UITextView.init()
         self.addSubview(content)
         content.textColor = UIColor.black
@@ -63,15 +61,9 @@ class DetailView: UIView {
         content.showsVerticalScrollIndicator = false
         self.content = content
         
-//
-//        self.title?.backgroundColor = UIColor.green
-//        self.time?.backgroundColor = UIColor.blue
-//        self.author?.backgroundColor = UIColor.purple
-//        self.content?.backgroundColor = UIColor.gray
-        
     }
     
-    
+    //MARK: 初始化布局
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -102,6 +94,7 @@ class DetailView: UIView {
         
     }
 
+    //MARK:显示数据
     func config(model:RequestModel) {
         self.title?.text = model.title
         self.time?.text = DateFormatter.init().Int2DateString(dateInterval: model.created!)
