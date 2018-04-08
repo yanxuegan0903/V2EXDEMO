@@ -38,7 +38,7 @@ class V2EXModel: NSObject {
         self.created = dict["created"] as? Int
         self.last_modified = dict["id"] as? Int
         self.last_touched = dict["id"] as? Int
-
+        
         
     }
 

@@ -19,6 +19,33 @@
 		A7AF99912078996700E243E6 /* V2EXRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF99902078996700E243E6 /* V2EXRequest.swift */; };
 		A7AF99932078A7F000E243E6 /* V2EXModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF99922078A7F000E243E6 /* V2EXModel.swift */; };
 		A7AF99992078B7E100E243E6 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF99982078B7E000E243E6 /* libc++abi.tbd */; };
+		A7AF99D52078D2F100E243E6 /* DisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF99D42078D2F100E243E6 /* DisplayCell.swift */; };
+		A7AF99D72079A5EB00E243E6 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF99D62079A5EB00E243E6 /* RequestModel.swift */; };
+		A7AF9A802079A82700E243E6 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A672079A82700E243E6 /* CustomDateFormatTransform.swift */; };
+		A7AF9A812079A82700E243E6 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A682079A82700E243E6 /* DataTransform.swift */; };
+		A7AF9A822079A82700E243E6 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A692079A82700E243E6 /* DateFormatterTransform.swift */; };
+		A7AF9A832079A82700E243E6 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A6A2079A82700E243E6 /* DateTransform.swift */; };
+		A7AF9A842079A82700E243E6 /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A6B2079A82700E243E6 /* DictionaryTransform.swift */; };
+		A7AF9A852079A82700E243E6 /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A6C2079A82700E243E6 /* EnumOperators.swift */; };
+		A7AF9A862079A82700E243E6 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A6D2079A82700E243E6 /* EnumTransform.swift */; };
+		A7AF9A872079A82700E243E6 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A6E2079A82700E243E6 /* FromJSON.swift */; };
+		A7AF9A882079A82700E243E6 /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A6F2079A82700E243E6 /* HexColorTransform.swift */; };
+		A7AF9A892079A82700E243E6 /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A702079A82700E243E6 /* ImmutableMappable.swift */; };
+		A7AF9A8A2079A82700E243E6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7AF9A712079A82700E243E6 /* Info.plist */; };
+		A7AF9A8B2079A82700E243E6 /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A722079A82700E243E6 /* IntegerOperators.swift */; };
+		A7AF9A8C2079A82700E243E6 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A732079A82700E243E6 /* ISO8601DateTransform.swift */; };
+		A7AF9A8D2079A82700E243E6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A742079A82700E243E6 /* Map.swift */; };
+		A7AF9A8E2079A82700E243E6 /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A752079A82700E243E6 /* MapError.swift */; };
+		A7AF9A8F2079A82700E243E6 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A762079A82700E243E6 /* Mappable.swift */; };
+		A7AF9A902079A82700E243E6 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A772079A82700E243E6 /* Mapper.swift */; };
+		A7AF9A912079A82700E243E6 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A782079A82700E243E6 /* NSDecimalNumberTransform.swift */; };
+		A7AF9A922079A82700E243E6 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A7A2079A82700E243E6 /* Operators.swift */; };
+		A7AF9A932079A82700E243E6 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A7B2079A82700E243E6 /* ToJSON.swift */; };
+		A7AF9A942079A82700E243E6 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A7C2079A82700E243E6 /* TransformOf.swift */; };
+		A7AF9A952079A82700E243E6 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A7D2079A82700E243E6 /* TransformOperators.swift */; };
+		A7AF9A962079A82700E243E6 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A7E2079A82700E243E6 /* TransformType.swift */; };
+		A7AF9A972079A82700E243E6 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A7F2079A82700E243E6 /* URLTransform.swift */; };
+		A7AF9A9B2079AB0D00E243E6 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A9A2079AB0D00E243E6 /* Extension.swift */; };
 		ED56311AE550460046DCD75F /* Pods_V2EX_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C1D9459C0A46324FCD6C0E /* Pods_V2EX_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +91,34 @@
 		A7AF99922078A7F000E243E6 /* V2EXModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EXModel.swift; sourceTree = "<group>"; };
 		A7AF99972078AC3B00E243E6 /* V2EX_Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "V2EX_Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		A7AF99982078B7E000E243E6 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		A7AF99D42078D2F100E243E6 /* DisplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCell.swift; sourceTree = "<group>"; };
+		A7AF99D62079A5EB00E243E6 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		A7AF9A672079A82700E243E6 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		A7AF9A682079A82700E243E6 /* DataTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransform.swift; sourceTree = "<group>"; };
+		A7AF9A692079A82700E243E6 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterTransform.swift; sourceTree = "<group>"; };
+		A7AF9A6A2079A82700E243E6 /* DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTransform.swift; sourceTree = "<group>"; };
+		A7AF9A6B2079A82700E243E6 /* DictionaryTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTransform.swift; sourceTree = "<group>"; };
+		A7AF9A6C2079A82700E243E6 /* EnumOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumOperators.swift; sourceTree = "<group>"; };
+		A7AF9A6D2079A82700E243E6 /* EnumTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTransform.swift; sourceTree = "<group>"; };
+		A7AF9A6E2079A82700E243E6 /* FromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromJSON.swift; sourceTree = "<group>"; };
+		A7AF9A6F2079A82700E243E6 /* HexColorTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorTransform.swift; sourceTree = "<group>"; };
+		A7AF9A702079A82700E243E6 /* ImmutableMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImmutableMappable.swift; sourceTree = "<group>"; };
+		A7AF9A712079A82700E243E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AF9A722079A82700E243E6 /* IntegerOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerOperators.swift; sourceTree = "<group>"; };
+		A7AF9A732079A82700E243E6 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		A7AF9A742079A82700E243E6 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		A7AF9A752079A82700E243E6 /* MapError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapError.swift; sourceTree = "<group>"; };
+		A7AF9A762079A82700E243E6 /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		A7AF9A772079A82700E243E6 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		A7AF9A782079A82700E243E6 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		A7AF9A792079A82700E243E6 /* ObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectMapper.h; sourceTree = "<group>"; };
+		A7AF9A7A2079A82700E243E6 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		A7AF9A7B2079A82700E243E6 /* ToJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToJSON.swift; sourceTree = "<group>"; };
+		A7AF9A7C2079A82700E243E6 /* TransformOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOf.swift; sourceTree = "<group>"; };
+		A7AF9A7D2079A82700E243E6 /* TransformOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOperators.swift; sourceTree = "<group>"; };
+		A7AF9A7E2079A82700E243E6 /* TransformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
+		A7AF9A7F2079A82700E243E6 /* URLTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
+		A7AF9A9A2079AB0D00E243E6 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		BA9618BB6FB393B271877B1F /* Pods-V2EX_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V2EX_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-V2EX_Demo/Pods-V2EX_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		FED660D5B8DE8C0396D7761C /* Pods-V2EX_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V2EX_DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-V2EX_DemoTests/Pods-V2EX_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,11 +201,15 @@
 		A7AF99612078993300E243E6 /* V2EX_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				A7AF9A662079A82700E243E6 /* Sources */,
 				A7AF99622078993300E243E6 /* AppDelegate.swift */,
 				A7AF99642078993300E243E6 /* ViewController.swift */,
+				A7AF99D42078D2F100E243E6 /* DisplayCell.swift */,
+				A7AF9A9A2079AB0D00E243E6 /* Extension.swift */,
 				A7AF99972078AC3B00E243E6 /* V2EX_Demo-Bridging-Header.h */,
 				A7AF99902078996700E243E6 /* V2EXRequest.swift */,
 				A7AF99922078A7F000E243E6 /* V2EXModel.swift */,
+				A7AF99D62079A5EB00E243E6 /* RequestModel.swift */,
 				A7AF99662078993300E243E6 /* Main.storyboard */,
 				A7AF99692078993300E243E6 /* Assets.xcassets */,
 				A7AF996B2078993300E243E6 /* LaunchScreen.storyboard */,
@@ -175,6 +234,38 @@
 				A7AF99842078993300E243E6 /* Info.plist */,
 			);
 			path = V2EX_DemoUITests;
+			sourceTree = "<group>";
+		};
+		A7AF9A662079A82700E243E6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A7AF9A672079A82700E243E6 /* CustomDateFormatTransform.swift */,
+				A7AF9A682079A82700E243E6 /* DataTransform.swift */,
+				A7AF9A692079A82700E243E6 /* DateFormatterTransform.swift */,
+				A7AF9A6A2079A82700E243E6 /* DateTransform.swift */,
+				A7AF9A6B2079A82700E243E6 /* DictionaryTransform.swift */,
+				A7AF9A6C2079A82700E243E6 /* EnumOperators.swift */,
+				A7AF9A6D2079A82700E243E6 /* EnumTransform.swift */,
+				A7AF9A6E2079A82700E243E6 /* FromJSON.swift */,
+				A7AF9A6F2079A82700E243E6 /* HexColorTransform.swift */,
+				A7AF9A702079A82700E243E6 /* ImmutableMappable.swift */,
+				A7AF9A712079A82700E243E6 /* Info.plist */,
+				A7AF9A722079A82700E243E6 /* IntegerOperators.swift */,
+				A7AF9A732079A82700E243E6 /* ISO8601DateTransform.swift */,
+				A7AF9A742079A82700E243E6 /* Map.swift */,
+				A7AF9A752079A82700E243E6 /* MapError.swift */,
+				A7AF9A762079A82700E243E6 /* Mappable.swift */,
+				A7AF9A772079A82700E243E6 /* Mapper.swift */,
+				A7AF9A782079A82700E243E6 /* NSDecimalNumberTransform.swift */,
+				A7AF9A792079A82700E243E6 /* ObjectMapper.h */,
+				A7AF9A7A2079A82700E243E6 /* Operators.swift */,
+				A7AF9A7B2079A82700E243E6 /* ToJSON.swift */,
+				A7AF9A7C2079A82700E243E6 /* TransformOf.swift */,
+				A7AF9A7D2079A82700E243E6 /* TransformOperators.swift */,
+				A7AF9A7E2079A82700E243E6 /* TransformType.swift */,
+				A7AF9A7F2079A82700E243E6 /* URLTransform.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AF9A8A2079A82700E243E6 /* Info.plist in Resources */,
 				A7AF996D2078993300E243E6 /* LaunchScreen.storyboard in Resources */,
 				A7AF996A2078993300E243E6 /* Assets.xcassets in Resources */,
 				A7AF99682078993300E243E6 /* Main.storyboard in Resources */,
@@ -458,10 +550,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AF99D52078D2F100E243E6 /* DisplayCell.swift in Sources */,
+				A7AF9A8F2079A82700E243E6 /* Mappable.swift in Sources */,
 				A7AF99932078A7F000E243E6 /* V2EXModel.swift in Sources */,
+				A7AF9A8B2079A82700E243E6 /* IntegerOperators.swift in Sources */,
+				A7AF9A902079A82700E243E6 /* Mapper.swift in Sources */,
 				A7AF99652078993300E243E6 /* ViewController.swift in Sources */,
+				A7AF9A882079A82700E243E6 /* HexColorTransform.swift in Sources */,
+				A7AF9A8E2079A82700E243E6 /* MapError.swift in Sources */,
+				A7AF9A892079A82700E243E6 /* ImmutableMappable.swift in Sources */,
+				A7AF9A862079A82700E243E6 /* EnumTransform.swift in Sources */,
+				A7AF9A802079A82700E243E6 /* CustomDateFormatTransform.swift in Sources */,
+				A7AF9A812079A82700E243E6 /* DataTransform.swift in Sources */,
+				A7AF9A8D2079A82700E243E6 /* Map.swift in Sources */,
+				A7AF9A822079A82700E243E6 /* DateFormatterTransform.swift in Sources */,
+				A7AF9A832079A82700E243E6 /* DateTransform.swift in Sources */,
+				A7AF9A942079A82700E243E6 /* TransformOf.swift in Sources */,
+				A7AF9A952079A82700E243E6 /* TransformOperators.swift in Sources */,
 				A7AF99632078993300E243E6 /* AppDelegate.swift in Sources */,
 				A7AF99912078996700E243E6 /* V2EXRequest.swift in Sources */,
+				A7AF9A922079A82700E243E6 /* Operators.swift in Sources */,
+				A7AF9A932079A82700E243E6 /* ToJSON.swift in Sources */,
+				A7AF9A842079A82700E243E6 /* DictionaryTransform.swift in Sources */,
+				A7AF9A972079A82700E243E6 /* URLTransform.swift in Sources */,
+				A7AF9A852079A82700E243E6 /* EnumOperators.swift in Sources */,
+				A7AF9A9B2079AB0D00E243E6 /* Extension.swift in Sources */,
+				A7AF9A8C2079A82700E243E6 /* ISO8601DateTransform.swift in Sources */,
+				A7AF9A962079A82700E243E6 /* TransformType.swift in Sources */,
+				A7AF99D72079A5EB00E243E6 /* RequestModel.swift in Sources */,
+				A7AF9A872079A82700E243E6 /* FromJSON.swift in Sources */,
+				A7AF9A912079A82700E243E6 /* NSDecimalNumberTransform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

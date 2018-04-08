@@ -20,11 +20,6 @@ class V2EXRequest: NSObject {
         print("init")
     }
 
-//    func ajaxTools(name:String ,completed:(runStr: String,isStop:Bool) -> String) -> String {
-//        let resStr = name + "覆水难收"
-//        completed(runStr: resStr, isStop: true)
-//        return resStr + " - 内部函数返回"
-//    }
     
     public func requestTopics(completed:@escaping (_ modelArray: NSMutableArray) -> Void) {
 
