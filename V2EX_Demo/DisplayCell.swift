@@ -10,7 +10,7 @@ import UIKit
 
 class DisplayCell: UITableViewCell {
 
-    var model:V2EXModel?
+//    var model:V2EXModel?
     var avatar:UIImageView?
     var userName:UILabel?
     var title:UILabel?
@@ -115,7 +115,7 @@ class DisplayCell: UITableViewCell {
     
     //MARK: 初始化数据
     func configModelData(model:V2EXModel) {
-        self.model = model;
+//        self.model = model;
         
         self.userName?.text = (model.member?["username"] as! String)
         
@@ -125,7 +125,7 @@ class DisplayCell: UITableViewCell {
         
         self.replies?.text = String.init(format: "阅读量：%d", model.replies!)
         
-        let date:String = DateFormatter.init().Int2String(dateInterval: model.created!)
+        let date:String = DateFormatter.init().Int2DateTimeString(dateInterval: model.created!)
         
         self.created?.text = date
     }
@@ -140,7 +140,6 @@ class DisplayCell: UITableViewCell {
         let image:UIImage = UIImage.init(data: data)!
         
         DispatchQueue.main.async {
-            print("更新头像")
             self.avatar?.image = image;
         }
         

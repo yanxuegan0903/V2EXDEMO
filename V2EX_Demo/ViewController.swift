@@ -18,6 +18,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var isLoadImage:Bool = true
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -82,11 +83,15 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     //MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
+        let model = self.modelArray.object(at: indexPath.row) as! V2EXModel
+        let detailVC:DetailViewController = DetailViewController()
+        detailVC.model = model
+        self.navigationController?.pushViewController(detailVC, animated: true)
+        
     }
     
     //MARK: 滑动时不加载图片
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        print("停止滑动")
         self.isLoadImage = true
         loadImageIcon()
     }

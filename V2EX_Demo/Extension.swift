@@ -10,7 +10,7 @@ import Foundation
 
 extension DateFormatter {
     
-    func Int2String(dateInterval:Int) -> String {
+    func Int2DateTimeString(dateInterval:Int) -> String {
         
         let formatter:DateFormatter = DateFormatter.init()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -22,5 +22,16 @@ extension DateFormatter {
         
     }
     
+    func Int2DateString(dateInterval:Int) -> String {
+        
+        let formatter:DateFormatter = DateFormatter.init()
+        formatter.dateFormat = "yyyy-MM-dd"
+        let date:Date = Date.init(timeIntervalSince1970: TimeInterval(dateInterval))
+        
+        let dateTime:String = formatter.string(from: date)
+        
+        return dateTime;
+        
+    }
     
 }
