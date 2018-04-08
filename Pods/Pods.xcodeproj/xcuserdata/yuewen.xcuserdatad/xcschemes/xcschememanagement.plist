@@ -7,7 +7,7 @@
 		<key>Pods-V2EX_Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Pods-V2EX_DemoTests.xcscheme</key>
 		<dict>

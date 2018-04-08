@@ -10,7 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var model:V2EXModel?
+    var model:RequestModel?
     
     
     
@@ -22,7 +22,7 @@ class DetailViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
         let detailView:DetailView = DetailView.init(frame: CGRect.init(x: 0, y: 64, width: self.view.frame.width, height: self.view.frame.height-64))
         self.view.addSubview(detailView)
-        detailView.config(model: self.model!)
+        detailView.config(model: self.model)
         
         
     }

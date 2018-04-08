@@ -113,22 +113,22 @@ class DisplayCell: UITableViewCell {
     }
     
     
-    //MARK: 初始化数据
-    func configModelData(model:V2EXModel) {
-//        self.model = model;
-        
-        self.userName?.text = (model.member?["username"] as! String)
-        
-        self.title?.text = model.title
-        
-        self.content?.text = model.content;
-        
-        self.replies?.text = String.init(format: "阅读量：%d", model.replies!)
-        
-        let date:String = DateFormatter.init().Int2DateTimeString(dateInterval: model.created!)
-        
-        self.created?.text = date
-    }
+//    //MARK: 初始化数据
+//    func configModelData(model:RequestModel) {
+////        self.model = model;
+//        
+//        self.userName?.text = (model.member?["username"] as! String)
+//        
+//        self.title?.text = model.title
+//        
+//        self.content?.text = model.content;
+//        
+//        self.replies?.text = String.init(format: "阅读量：%d", model.replies!)
+//        
+//        let date:String = DateFormatter.init().Int2DateTimeString(dateInterval: model.created!)
+//        
+//        self.created?.text = date
+//    }
     
     
     func url2Image(imgUrl:String) {

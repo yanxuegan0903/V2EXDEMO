@@ -9,7 +9,7 @@
 import UIKit
 
 
-
+//// 废弃
 class V2EXModel: NSObject {
     
     var id: Int?

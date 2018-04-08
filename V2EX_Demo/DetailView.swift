@@ -102,11 +102,11 @@ class DetailView: UIView {
         
     }
 
-    func config(model:V2EXModel) {
-        self.title?.text = model.title
-        self.time?.text = DateFormatter.init().Int2DateString(dateInterval: model.created!)
-        self.author?.text = (model.member?["username"] as! String)
-        self.content?.text = model.content
-    }
-    
+//    func config(model:RequestModel) {
+//        self.title?.text = model.title
+//        self.time?.text = DateFormatter.init().Int2DateString(dateInterval: model.created!)
+//        self.author?.text = (model.member?["username"] as! String)
+//        self.content?.text = model.content
+//    }
+//    
 }
