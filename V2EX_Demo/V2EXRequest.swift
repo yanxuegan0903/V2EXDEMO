@@ -17,7 +17,7 @@ class V2EXRequest: NSObject {
     
     
     override init() {
-        print("init")
+        
     }
 
     
@@ -33,17 +33,11 @@ class V2EXRequest: NSObject {
             
             array = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
             
-            let modelArray:NSMutableArray = NSMutableArray.init()
+            let modelArr = Mapper<RequestModel>().mapArray(JSONArray: array as! [[String : Any]])
             
-            for dict in array {
-                
-                let model:V2EXModel = V2EXModel.init(dict: dict as! Dictionary<String, Any>);
-                
-                modelArray.add(model)
-                
-            }
+            print(modelArr)
             
-            completed(modelArray)
+            completed(modelArr as! NSMutableArray)
         }
         
         

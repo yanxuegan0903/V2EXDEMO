@@ -33,7 +33,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         v2ex.requestTopics { (modelArray) in
             print("model = ",modelArray)
             if let strongSelf = weakSelf {
-                strongSelf.modelArray = modelArray;
+                strongSelf.modelArray = modelArray ;
                 
                 DispatchQueue.main.async {
                     strongSelf.tableView?.reloadData()

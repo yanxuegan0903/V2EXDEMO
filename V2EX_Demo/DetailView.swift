@@ -68,7 +68,7 @@ class DetailView: UIView {
 //        self.time?.backgroundColor = UIColor.blue
 //        self.author?.backgroundColor = UIColor.purple
 //        self.content?.backgroundColor = UIColor.gray
-
+        
     }
     
     
