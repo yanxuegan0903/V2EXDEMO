@@ -12,42 +12,26 @@ import UIKit
 
 class V2EXRequest: NSObject {
     
-    
-    
-    
-    
     override init() {
         super.init()
     }
 
     //MARK: 网络请求展示的数据
-    public func requestTopics(completed:@escaping (_ modelArray: NSMutableArray) -> Void) {
+    public func requestTopics(completed:@escaping (_ modelArray: [RequestModel]) -> Void) {
 
         let url: URL = URL.init(string: "https://www.v2ex.com/api/topics/hot.json")!
         
         let session: URLSession = URLSession.shared
         
         let dataTask:URLSessionDataTask = session.dataTask(with: url) { (data, response, error) in
+  
+            guard let jsonData = data else { return }
+            guard let array = try? JSONSerialization.jsonObject(with: jsonData, options: .allowFragments) else { return }
             
-            let array:NSArray
+            let modelArr = Mapper<RequestModel>().mapArray(JSONObject: array)
             
-            //  Json 解析出数据 为一个JSON 字符串
-            array = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
-            
-            //  字典转模型
-            let modelArr = Mapper<RequestModel>().mapArray(JSONArray: array as! [[String : Any]])
-            
-            /*****************需要修改的地方 省掉这一步  该怎么省掉*********************/
-            let modelArray:NSMutableArray = NSMutableArray.init()
-            
-            for model:RequestModel in modelArr {
-                modelArray.add(model)
-            }
-            /*************************************************/
-
-            completed(modelArray)
+            completed((modelArr)!)
         }
-        
         
         dataTask.resume()
         

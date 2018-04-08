@@ -94,12 +94,4 @@ class DetailView: UIView {
         
     }
 
-    //MARK:显示数据
-    func config(model:RequestModel) {
-        self.title?.text = model.title
-        self.time?.text = DateFormatter.init().Int2DateString(dateInterval: model.created!)
-        self.author?.text = model.member?.username
-        self.content?.text = model.content
-    }
-    
 }

@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    var tableView:UITableView?
-    var modelArray: NSMutableArray = NSMutableArray.init()
+    var tableView :UITableView?
+    var modelArray:[RequestModel] = []
     var isLoadImage:Bool = true
     
     
@@ -20,22 +20,19 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
         self.initTableView()
         
         //  获取网络数据
-        let v2ex = V2EXRequest.init()
-        
-        weak var weakSelf = self
-        v2ex.requestTopics { (modelArray) in
-            if let strongSelf = weakSelf {
-                strongSelf.modelArray = modelArray ;
-                
-                DispatchQueue.main.async {
-                    strongSelf.tableView?.reloadData()
-                }
-            }
+
+//        let v2ex = V2EXRequest.init()
+//        weak var weakSelf = self
+        V2EXRequest().requestTopics {(modelArray) in
             
+            print("model = ",modelArray)
+            DispatchQueue.main.async {
+                self.modelArray = modelArray
+                self.tableView?.reloadData()
+            }
         }
  
     }
@@ -60,9 +57,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         let cell: DisplayCell = tableView.dequeueReusableCell(withIdentifier: "DisplayCell", for: indexPath) as! DisplayCell
         
-        let model = self.modelArray.object(at: indexPath.row) as! RequestModel
+        let model = self.modelArray[indexPath.row]
         
-        cell.configModelData(model: model)
+        cell.config(model: model)
         
         if self.isLoadImage {
             cell.url2Image(imgUrl: (model.member?.avatar_normal)!)
@@ -79,7 +76,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     //MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        let model = self.modelArray.object(at: indexPath.row) as! RequestModel
+        let model = self.modelArray[indexPath.row]
         let detailVC:DetailViewController = DetailViewController()
         detailVC.model = model
         self.navigationController?.pushViewController(detailVC, animated: true)
@@ -101,11 +98,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         let visibleArray = self.tableView?.indexPathsForVisibleRows
         for indexPath in visibleArray! {
-            let model = self.modelArray.object(at: indexPath.row) as! RequestModel
+            let model = self.modelArray[indexPath.row]
             let cell:DisplayCell = self.tableView?.cellForRow(at: indexPath) as! DisplayCell
             cell.url2Image(imgUrl: (model.member?.avatar_normal)!)
         }
-        
     }
     
     

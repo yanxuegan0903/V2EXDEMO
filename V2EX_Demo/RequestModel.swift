@@ -22,7 +22,6 @@ class RequestModel: Mappable {
     var last_modified: Int?
     var last_touched: Int?
     
-    
     required init?(map: Map) {
         
     }
@@ -40,7 +39,6 @@ class RequestModel: Mappable {
         last_modified           <- map["last_modified"]
         last_touched            <- map["last_touched"]
     }
-    
     
 }
 

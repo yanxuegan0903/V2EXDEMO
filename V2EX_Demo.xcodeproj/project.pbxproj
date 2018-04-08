@@ -47,6 +47,7 @@
 		A7AF9A9B2079AB0D00E243E6 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A9A2079AB0D00E243E6 /* Extension.swift */; };
 		A7AF9A9D2079BBC700E243E6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A9C2079BBC700E243E6 /* DetailViewController.swift */; };
 		A7AF9A9F2079BBD600E243E6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF9A9E2079BBD600E243E6 /* DetailView.swift */; };
+		DBCBE3EE2079F68E0075171F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCBE3ED2079F68E0075171F /* Config.swift */; };
 		ED56311AE550460046DCD75F /* Pods_V2EX_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C1D9459C0A46324FCD6C0E /* Pods_V2EX_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +123,7 @@
 		A7AF9A9C2079BBC700E243E6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A7AF9A9E2079BBD600E243E6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		BA9618BB6FB393B271877B1F /* Pods-V2EX_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V2EX_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-V2EX_Demo/Pods-V2EX_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		DBCBE3ED2079F68E0075171F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		FED660D5B8DE8C0396D7761C /* Pods-V2EX_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V2EX_DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-V2EX_DemoTests/Pods-V2EX_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +205,7 @@
 		A7AF99612078993300E243E6 /* V2EX_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DBCBE3EC2079F6830075171F /* Config */,
 				A7AF9A662079A82700E243E6 /* Sources */,
 				A7AF99622078993300E243E6 /* AppDelegate.swift */,
 				A7AF9A9A2079AB0D00E243E6 /* Extension.swift */,
@@ -269,6 +272,14 @@
 				A7AF9A7F2079A82700E243E6 /* URLTransform.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		DBCBE3EC2079F6830075171F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DBCBE3ED2079F68E0075171F /* Config.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,6 +589,7 @@
 				A7AF9A972079A82700E243E6 /* URLTransform.swift in Sources */,
 				A7AF9A852079A82700E243E6 /* EnumOperators.swift in Sources */,
 				A7AF9A9F2079BBD600E243E6 /* DetailView.swift in Sources */,
+				DBCBE3EE2079F68E0075171F /* Config.swift in Sources */,
 				A7AF9A9B2079AB0D00E243E6 /* Extension.swift in Sources */,
 				A7AF9A8C2079A82700E243E6 /* ISO8601DateTransform.swift in Sources */,
 				A7AF9A962079A82700E243E6 /* TransformType.swift in Sources */,

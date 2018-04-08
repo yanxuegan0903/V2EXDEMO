@@ -110,23 +110,6 @@ class DisplayCell: UITableViewCell {
     }
     
     
-    //MARK: 初始化数据
-    func configModelData(model:RequestModel) {
-        
-        self.userName?.text = (model.member?.username)
-        
-        self.title?.text = model.title
-        
-        self.content?.text = model.content;
-        
-        self.replies?.text = String.init(format: "阅读量：%d", model.replies!)
-        
-        let date:String = DateFormatter.init().Int2DateTimeString(dateInterval: model.created!)
-        
-        self.created?.text = date
-    }
-    
-    
     //MARK:网络下载头像  
     func url2Image(imgUrl:String) {
         
